@@ -1,0 +1,1653 @@
+{
+  "name": "Synthflow Feedback Pipeline Q4",
+  "nodes": [
+    {
+      "parameters": {},
+      "id": "2399ec5c-da05-424d-b22a-11b133ad51a2",
+      "name": "When clicking Execute",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -240,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8",
+          "mode": "list",
+          "cachedResultName": "Copy of Product Ops Case Study - Data - Make a copy",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 499176187,
+          "mode": "list",
+          "cachedResultName": "NPS_Responses",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit#gid=499176187"
+        },
+        "options": {}
+      },
+      "id": "db1b8fe0-6725-4f26-8d9e-8648260ceeb9",
+      "name": "Read NPS_Responses",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        0,
+        0
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "ybT0e3gvtlYGJ05G",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8",
+          "mode": "list",
+          "cachedResultName": "Copy of Product Ops Case Study - Data - Make a copy",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 203173725,
+          "mode": "list",
+          "cachedResultName": "Support_Tickets",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit#gid=203173725"
+        },
+        "options": {}
+      },
+      "id": "fbec2d25-3ba3-4e5d-9b29-420e021cc652",
+      "name": "Read Support_Tickets",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        0,
+        208
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "ybT0e3gvtlYGJ05G",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8",
+          "mode": "list",
+          "cachedResultName": "Copy of Product Ops Case Study - Data - Make a copy",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 45950444,
+          "mode": "list",
+          "cachedResultName": "Sales_Call_Notes",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit#gid=45950444"
+        },
+        "options": {}
+      },
+      "id": "f2f8d194-81d9-4cdb-98d3-7dd50c14cda0",
+      "name": "Read Sales_Call_Notes",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        0,
+        400
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "ybT0e3gvtlYGJ05G",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8",
+          "mode": "list",
+          "cachedResultName": "Copy of Product Ops Case Study - Data - Make a copy",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1828349339,
+          "mode": "list",
+          "cachedResultName": "CS_Escalations",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit#gid=1828349339"
+        },
+        "options": {}
+      },
+      "id": "3d13f5e3-4a65-4fa3-81f7-6fd8d1d13953",
+      "name": "Read CS_Escalations",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        0,
+        608
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "ybT0e3gvtlYGJ05G",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8",
+          "mode": "list",
+          "cachedResultName": "Copy of Product Ops Case Study - Data - Make a copy",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 36473527,
+          "mode": "list",
+          "cachedResultName": "Feature_Requests",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit#gid=36473527"
+        },
+        "options": {}
+      },
+      "id": "f115f702-1ed2-4830-8845-cb44f9c98673",
+      "name": "Read Feature_Requests",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        0,
+        800
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "ybT0e3gvtlYGJ05G",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const out = [];\nfor (const item of $input.all()) {\n  const j = item.json;\n  out.push({ json: {\n    record_id: j.Response_ID, source: 'NPS', date: j.Date, account: j.Account,\n    raw_title: '',\n    raw_tag: j.Tag, raw_text: j.Comment,\n    pipeline_usd: 0, lost_deal_usd: 0, revenue_at_risk_usd: 0, fr_weighted_arr_usd: 0,\n    severity: j.Bucket === 'Detractor' ? 'Detractor' : null,\n    linked_accounts: null\n  }});\n}\nreturn out;"
+      },
+      "id": "3719f2cb-da1d-4c0c-8647-730cb9d377eb",
+      "name": "Normalize NPS",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const out = [];\nfor (const item of $input.all()) {\n  const j = item.json;\n  out.push({ json: {\n    record_id: j.Ticket_ID, source: 'Support', date: j.Created_Date, account: j.Account,\n    raw_title: '',\n    raw_tag: j.Tag, raw_text: j.Body,\n    pipeline_usd: 0, lost_deal_usd: 0, revenue_at_risk_usd: 0, fr_weighted_arr_usd: 0,\n    severity: j.Priority, linked_accounts: null\n  }});\n}\nreturn out;"
+      },
+      "id": "75891036-3573-4d28-bc52-a6d201129eb8",
+      "name": "Normalize Support",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        208
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const out = [];\nfor (const item of $input.all()) {\n  const j = item.json;\n  const outcome = String(j.Outcome || '').toLowerCase();\n  out.push({ json: {\n    record_id: j.Deal_ID, source: 'Sales', date: j.Date, account: j.Account,\n    raw_title: '',\n    raw_tag: j.Objection_Theme, raw_text: j.Objection_Detail,\n    pipeline_usd: outcome === 'open' ? (Number(j.Deal_Size_USD) || 0) : 0,\n    lost_deal_usd: outcome === 'lost' ? (Number(j.Deal_Size_USD) || 0) : 0,\n    revenue_at_risk_usd: 0, fr_weighted_arr_usd: 0,\n    severity: null, linked_accounts: null\n  }});\n}\nreturn out;"
+      },
+      "id": "18166ea0-2831-4272-b333-cd96784fa078",
+      "name": "Normalize Sales",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const out = [];\nfor (const item of $input.all()) {\n  const j = item.json;\n  out.push({ json: {\n    record_id: j.Escalation_ID, source: 'CS_Escalation', date: j.Date, account: j.Account,\n    raw_title: '',\n    raw_tag: j.Title, raw_text: j.Summary,\n    pipeline_usd: 0, lost_deal_usd: 0,\n    revenue_at_risk_usd: Number(j.Revenue_At_Risk_USD) || 0,\n    fr_weighted_arr_usd: 0, severity: j.Severity, linked_accounts: null\n  }});\n}\nreturn out;"
+      },
+      "id": "a178be64-fc62-49c9-b002-45d7fe327096",
+      "name": "Normalize CS Escalations",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        608
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "function toISO(v) {\n  if (v == null || v === '') return null;\n  if (typeof v === 'number') {\n    return new Date(Math.round((v - 25569) * 86400 * 1000)).toISOString().slice(0, 10);\n  }\n  return String(v);\n}\nconst out = [];\nfor (const item of $input.all()) {\n  const j = item.json;\n  out.push({ json: {\n    record_id: j.FR_ID, source: 'Feature_Request', date: toISO(j.Last_Updated), account: null,\n    raw_title: j.Title,\n    raw_tag: j.Tag, raw_text: j.Description,\n    pipeline_usd: 0, lost_deal_usd: 0, revenue_at_risk_usd: 0,\n    fr_weighted_arr_usd: Number(j.Weighted_ARR_USD) || 0,\n    linked_accounts_count: Number(j.Linked_Accounts_Count) || 0,\n    severity: j.Priority, linked_accounts: j.Sample_Linked_Accounts\n  }});\n}\nreturn out;"
+      },
+      "id": "17e4c2c0-80be-4d78-93e3-5859b60c7e1c",
+      "name": "Normalize Feature Requests",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        240,
+        800
+      ]
+    },
+    {
+      "parameters": {
+        "numberInputs": 5
+      },
+      "id": "39d43e09-66c5-493a-90dc-99a60d9dea32",
+      "name": "Merge All Sources",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.1,
+      "position": [
+        512,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const taxonomy = {\n  'integrations': 'Integrations', 'api': 'Integrations', 'salesforce': 'Integrations',\n  'hubspot': 'Integrations', 'integration outage': 'Integrations',\n  'analytics': 'Analytics & Reporting', 'reporting': 'Analytics & Reporting', 'analytics gap': 'Analytics & Reporting',\n  'latency': 'Latency & Performance', 'latency degradation': 'Latency & Performance',\n  'knowledge_base': 'Knowledge Base / RAG', 'kb': 'Knowledge Base / RAG',\n  'kb re-index latency': 'Knowledge Base / RAG', 'knowledge base': 'Knowledge Base / RAG',\n  'voice_quality': 'Voice Quality & Multilingual', 'voice': 'Voice Quality & Multilingual',\n  'voice quality': 'Voice Quality & Multilingual', 'multilingual': 'Voice Quality & Multilingual',\n  'german tts': 'Voice Quality & Multilingual', 'multilingual switching': 'Voice Quality & Multilingual',\n  'language': 'Voice Quality & Multilingual',\n  'reliability': 'Reliability / Trust', 'hallucination incident': 'Reliability / Trust',\n  'prompt reliability': 'Reliability / Trust',\n  'sso': 'Identity & Compliance', 'compliance': 'Identity & Compliance',\n  'sso blocker': 'Identity & Compliance', 'sso/security': 'Identity & Compliance',\n  'hipaa delay': 'Identity & Compliance',\n  'transfer': 'Telephony & Transfer', 'call-transfer': 'Telephony & Transfer',\n  'telephony': 'Telephony & Transfer', 'warm transfer': 'Telephony & Transfer',\n  'concurrency limits': 'Telephony & Transfer',\n  'pricing': 'Pricing & Billing', 'billing': 'Pricing & Billing', 'billing dispute': 'Pricing & Billing',\n  'onboarding': 'Onboarding & Activation', 'onboarding speed': 'Onboarding & Activation'\n};\n\nconst out = [];\nfor (const item of $input.all()) {\n  const j = item.json;\n  const key = (j.raw_tag || '').toString().trim().toLowerCase();\n  const parent_theme = taxonomy[key] || '';\n  out.push({ json: { ...j, parent_theme, match_method: parent_theme ? 'deterministic' : '' } });\n}\nreturn out;"
+      },
+      "id": "e2e1926c-9240-41a8-9bb1-0c549fb3d72b",
+      "name": "Match Taxonomy",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        960,
+        336
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "id": "c1",
+              "leftValue": "={{ $json.parent_theme }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "notEmpty"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "8040f0ed-37c2-4d57-a4e1-477d31f7496b",
+      "name": "Has Parent Theme?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        1168,
+        304
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "66efa4ae-5664-4a83-9969-d46cc13191b8",
+      "name": "Unmatched Records",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        1216,
+        576
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst records = items.map(i => ({ record_id: i.json.record_id, raw_tag: i.json.raw_tag, raw_text: i.json.raw_text }));\n\nconst chunkSize = 50;\nconst chunks = [];\nfor (let i = 0; i < records.length; i += chunkSize) {\n  chunks.push(records.slice(i, i + chunkSize));\n}\nreturn chunks.map(chunk => ({ json: { records: chunk } }));"
+      },
+      "id": "96527912-e1bb-4c4e-8cd4-3f6b012a4dec",
+      "name": "Prepare Batch for Classification",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1392,
+        560
+      ]
+    },
+    {
+      "parameters": {
+        "schemaType": "manual",
+        "inputSchema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"classifications\": {\n      \"type\": \"array\",\n      \"items\": { \"type\": \"object\", \"properties\": { \"record_id\": {\"type\": \"string\"}, \"parent_theme\": {\"type\": \"string\"}, \"confidence\": {\"type\": \"string\", \"enum\": [\"high\",\"medium\",\"low\"]} }, \"required\": [\"record_id\",\"parent_theme\",\"confidence\"] }\n    }\n  },\n  \"required\": [\"classifications\"]\n}",
+        "autoFix": true
+      },
+      "id": "8d68f6e1-4602-48cf-b6e4-bf5c7b682484",
+      "name": "Structured Output Parser",
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        1712,
+        880
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ JSON.stringify($json.records) }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "You are classifying a batch of customer feedback records into a fixed taxonomy for Synthflow, a voice AI platform. You will receive a JSON array of records, each with record_id, raw_tag, and raw_text. For EVERY record, classify it into the single best-fitting parent theme from this exact list: Integrations, Analytics & Reporting, Latency & Performance, Knowledge Base / RAG, Voice Quality & Multilingual, Reliability / Trust, Identity & Compliance, Telephony & Transfer, Pricing & Billing, Onboarding & Activation, Unclassified/Other. Only use Unclassified/Other if nothing else plausibly fits. Return one classification per record_id — do not skip any."
+        }
+      },
+      "id": "7b12f2f2-7a92-4b36-9cdc-e40a9af18b3f",
+      "name": "AI Classify Theme",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        1632,
+        560
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const originals = $('Unmatched Records').all();\nconst chunkResults = $input.all();\n\nconst byId = {};\nfor (const result of chunkResults) {\n  const classifications = (result.json.output && result.json.output.classifications) || [];\n  for (const c of classifications) byId[c.record_id] = c;\n}\n\nreturn originals.map(item => {\n  const j = item.json;\n  const c = byId[j.record_id] || {};\n  return { json: { ...j, parent_theme: c.parent_theme || 'Unclassified/Other', match_method: 'ai_fallback', ai_confidence: c.confidence || 'low' } };\n});"
+      },
+      "id": "c58cb68c-0040-46a0-a788-d21536bb2b69",
+      "name": "Attach AI Theme",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        2032,
+        560
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "30e95090-5a14-486a-a3da-0939a284f423",
+      "name": "Recombine Classified",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.1,
+      "position": [
+        2240,
+        400
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "loose",
+            "version": 1
+          },
+          "conditions": [
+            {
+              "id": "c2",
+              "leftValue": "={{ $json.source }}",
+              "rightValue": "Feature_Request",
+              "operator": {
+                "type": "string",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "id": "9c0edb34-5972-434e-ad94-c69088af5488",
+      "name": "Is Feature Request?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        2816,
+        416
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "cf16f08a-bbc1-4f09-81c5-d0f7452d372a",
+      "name": "FR Records",
+      "type": "n8n-nodes-base.noOp",
+      "typeVersion": 1,
+      "position": [
+        3008,
+        528
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst records = items.map(i => ({\n  record_id: i.json.record_id,\n  parent_theme: i.json.parent_theme || 'Unclassified/Other',\n  text: (i.json.raw_title || '') + ' — ' + (i.json.raw_tag || '') + ': ' + (i.json.raw_text || '')\n}));\nreturn [{ json: { records } }];"
+      },
+      "id": "d5f26b28-fa50-4113-85c9-6062320e5916",
+      "name": "Prepare FR List for Dedup",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3216,
+        528
+      ]
+    },
+    {
+      "parameters": {
+        "schemaType": "manual",
+        "inputSchema": "{\n  \"type\": \"object\",\n  \"properties\": {\n    \"clusters\": {\n      \"type\": \"array\",\n      \"items\": {\n        \"type\": \"object\",\n        \"properties\": {\n          \"record_ids\": { \"type\": \"array\", \"items\": { \"type\": \"string\" } },\n          \"reason\": { \"type\": \"string\" }\n        },\n        \"required\": [\"record_ids\", \"reason\"]\n      }\n    }\n  },\n  \"required\": [\"clusters\"]\n}",
+        "autoFix": true
+      },
+      "id": "7539c599-ffdf-4cfb-bc00-2177ea1af3c8",
+      "name": "Structured Output Parser (Dedup)",
+      "type": "@n8n/n8n-nodes-langchain.outputParserStructured",
+      "typeVersion": 1.2,
+      "position": [
+        3472,
+        848
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=={{ \"Theme: \" + $json.parent_theme + \"\\n\\nRecords:\\n\" + JSON.stringify($json.records) }}",
+        "hasOutputParser": true,
+        "options": {
+          "systemMessage": "You are given a list of feature requests for Synthflow, a voice AI platform, all already belonging to the same theme, each with a record_id and text (title + tag + description). Group any that describe the same underlying request, even if worded very differently. Only group when genuinely confident they're near-duplicates — do not group just because they share a theme, they must describe the same specific request.\n\nFor each group, return the record_ids and a one-sentence reason citing the specific overlapping concept between the records. Only use record_ids that appear in the input you were given. Do not include requests that have no duplicates — omit singletons entirely."
+        }
+      },
+      "id": "c03a1d8b-f699-4e32-960f-349d25826ddf",
+      "name": "AI Dedup Feature Requests",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.7,
+      "position": [
+        3648,
+        528
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const clusters = $json.valid_clusters || [];\nconst original = $('FR Records').all().map(i => i.json);\nconst byId = Object.fromEntries(original.map(r => [r.record_id, r]));\n\nconst dropIds = new Set();\nconst mergedFor = {};\nfor (const cluster of clusters) {\n  const ids = cluster.record_ids;\n  const canonical = ids[0];\n  mergedFor[canonical] = { count: ids.length - 1, accounts: new Set(), arr: 0 };\n  for (let i = 1; i < ids.length; i++) {\n    dropIds.add(ids[i]);\n    const dup = byId[ids[i]];\n    if (!dup) continue;\n    mergedFor[canonical].arr += Number(dup.fr_weighted_arr_usd) || 0;\n    String(dup.linked_accounts || '').replace(/\\u2026/g, '').split(',')\n      .map(s => s.trim()).filter(Boolean)\n      .forEach(a => mergedFor[canonical].accounts.add(a));\n  }\n}\n\nconst out = [];\nfor (const rec of original) {\n  if (dropIds.has(rec.record_id)) continue;\n  const m = mergedFor[rec.record_id];\n  if (m) {\n    const existing = String(rec.linked_accounts || '').replace(/\\u2026/g, '').split(',').map(s => s.trim()).filter(Boolean);\n    const union = Array.from(new Set([...existing, ...m.accounts]));\n    out.push({ json: { ...rec,\n      merged_duplicate_count: m.count,\n      linked_accounts: union.join(', '),\n      fr_weighted_arr_usd: (Number(rec.fr_weighted_arr_usd) || 0) + m.arr\n    }});\n  } else {\n    out.push({ json: { ...rec, merged_duplicate_count: 0 } });\n  }\n}\nreturn out;"
+      },
+      "id": "f98835b8-4ce4-46d1-9854-95b837085b56",
+      "name": "Apply Dedup - Merge Clusters",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4288,
+        656
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "const clusters = $json.valid_clusters || [];\nconst original = $('FR Records').all().map(i => i.json);\n\nconst statusMap = {};\nfor (const cluster of clusters) {\n  const ids = cluster.record_ids;\n  const canonical = ids[0];\n  for (let i = 0; i < ids.length; i++) {\n    statusMap[ids[i]] = i === 0 ? 'Unique (canonical)' : ('Duplicate of ' + canonical);\n  }\n}\n\nreturn original.map(rec => ({\n  json: { FR_ID: rec.record_id, Duplicate_Status: statusMap[rec.record_id] || 'Unique' }\n}));"
+      },
+      "id": "1c4e7cc6-7533-40b7-b215-c84b3bd6643d",
+      "name": "Build FR Duplicate Status",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4288,
+        240
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "documentId": {
+          "__rl": true,
+          "value": "1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8",
+          "mode": "list",
+          "cachedResultName": "Copy of Product Ops Case Study - Data - Make a copy",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 36473527,
+          "mode": "list",
+          "cachedResultName": "Feature_Requests",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit#gid=36473527"
+        },
+        "columns": {
+          "mappingMode": "defineBelow",
+          "value": {
+            "FR_ID": "={{ $json.FR_ID }}",
+            "row_number": 0,
+            "Duplicate_Status": "={{ $json.Duplicate_Status }}"
+          },
+          "matchingColumns": [
+            "FR_ID"
+          ],
+          "schema": [
+            {
+              "id": "FR_ID",
+              "displayName": "FR_ID",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "Title",
+              "displayName": "Title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Tag",
+              "displayName": "Tag",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Description",
+              "displayName": "Description",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Status",
+              "displayName": "Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Priority",
+              "displayName": "Priority",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Linked_Accounts_Count",
+              "displayName": "Linked_Accounts_Count",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Sample_Linked_Accounts",
+              "displayName": "Sample_Linked_Accounts",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Weighted_ARR_USD",
+              "displayName": "Weighted_ARR_USD",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Source_Channels",
+              "displayName": "Source_Channels",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Owner",
+              "displayName": "Owner",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Last_Updated",
+              "displayName": "Last_Updated",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "Duplicate_Status",
+              "displayName": "Duplicate_Status",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "row_number",
+              "displayName": "row_number",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "number",
+              "canBeUsedToMatch": true,
+              "readOnly": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "id": "66453b8c-d8e4-4ff4-88e6-4533e84d284f",
+      "name": "Mark Duplicates in Feature_Requests",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        4496,
+        224
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "ybT0e3gvtlYGJ05G",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {},
+      "id": "39f02e20-afcb-4e4d-ad2f-18765bd2e6d3",
+      "name": "Merge Deduped + Other",
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.1,
+      "position": [
+        4464,
+        432
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "return $input.all().map(item => {\n  const j = { ...item.json };\n  delete j.output;\n  return { json: {\n    ...j,\n    ai_confidence: j.ai_confidence !== undefined ? j.ai_confidence : null,\n    merged_duplicate_count: j.merged_duplicate_count !== undefined ? j.merged_duplicate_count : 0\n  }};\n});"
+      },
+      "id": "1f37d697-dd0d-4d46-923c-51bfc294b4a7",
+      "name": "Fill Missing Fields",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4656,
+        640
+      ]
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8",
+          "mode": "list",
+          "cachedResultName": "Copy of Product Ops Case Study - Data - Make a copy",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 539123620,
+          "mode": "list",
+          "cachedResultName": "Accounts",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit#gid=539123620"
+        },
+        "options": {}
+      },
+      "id": "fba9cb21-14c4-4b62-b9d9-51e284041a6e",
+      "name": "Read Accounts",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        0,
+        992
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "ybT0e3gvtlYGJ05G",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "const accounts = $('Read Accounts').all().map(i => i.json);\nconst arrLookup = {};\nfor (const a of accounts) arrLookup[a.Account] = Number(a.ARR_USD) || 0;\n\nconst records = $('Fill Missing Fields').all();\n\nreturn records.map(item => {\n  const j = item.json;\n\n  const account_arr_usd = j.account && arrLookup[j.account] !== undefined ? arrLookup[j.account] : 0;\n\n  let sample_accounts_arr_usd = 0;\n  let arr_sample_truncated = false;\n  if (j.linked_accounts) {\n    const names = String(j.linked_accounts).replace(/\\u2026/g, '').split(',').map(s => s.trim()).filter(Boolean);\n    for (const n of names) if (arrLookup[n] !== undefined) sample_accounts_arr_usd += arrLookup[n];\n    arr_sample_truncated = (j.linked_accounts_count || 0) > names.length;\n  }\n\n  return { json: { ...j, account_arr_usd, sample_accounts_arr_usd, arr_sample_truncated } };\n});"
+      },
+      "id": "c4eb33da-aa00-4043-8c4c-0e5655a13c0a",
+      "name": "Attach Revenue Signals",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4720,
+        992
+      ]
+    },
+    {
+      "parameters": {
+        "operation": "appendOrUpdate",
+        "documentId": {
+          "__rl": true,
+          "value": "1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8",
+          "mode": "list",
+          "cachedResultName": "Copy of Product Ops Case Study - Data - Make a copy",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 2090053632,
+          "mode": "list",
+          "cachedResultName": "Normalized_Feedback",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1eXoG772tYeuDzCjvaLo1NRTvUQNFsHRRUU_sdEgfDX8/edit#gid=2090053632"
+        },
+        "columns": {
+          "mappingMode": "autoMapInputData",
+          "value": {},
+          "matchingColumns": [
+            "record_id"
+          ],
+          "schema": [
+            {
+              "id": "record_id",
+              "displayName": "record_id",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "source",
+              "displayName": "source",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "date",
+              "displayName": "date",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "account",
+              "displayName": "account",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "raw_tag",
+              "displayName": "raw_tag",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "raw_title",
+              "displayName": "raw_title",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "raw_text",
+              "displayName": "raw_text",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "revenue_signal",
+              "displayName": "revenue_signal",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "severity",
+              "displayName": "severity",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "linked_accounts",
+              "displayName": "linked_accounts",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "parent_theme",
+              "displayName": "parent_theme",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "match_method",
+              "displayName": "match_method",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "ai_confidence",
+              "displayName": "ai_confidence",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "merged_duplicate_count",
+              "displayName": "merged_duplicate_count",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "output",
+              "displayName": "output",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "weighted_arr_usd",
+              "displayName": "weighted_arr_usd",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "arr_accounts",
+              "displayName": "arr_accounts",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "account_arr_pairs",
+              "displayName": "account_arr_pairs",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true
+            },
+            {
+              "id": "pipeline_usd",
+              "displayName": "pipeline_usd",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "lost_deal_usd",
+              "displayName": "lost_deal_usd",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "revenue_at_risk_usd",
+              "displayName": "revenue_at_risk_usd",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "fr_weighted_arr_usd",
+              "displayName": "fr_weighted_arr_usd",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "account_arr_usd",
+              "displayName": "account_arr_usd",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "sample_accounts_arr_usd",
+              "displayName": "sample_accounts_arr_usd",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "arr_sample_truncated",
+              "displayName": "arr_sample_truncated",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            },
+            {
+              "id": "linked_accounts_count",
+              "displayName": "linked_accounts_count",
+              "required": false,
+              "defaultMatch": false,
+              "display": true,
+              "type": "string",
+              "canBeUsedToMatch": true,
+              "removed": false
+            }
+          ],
+          "attemptToConvertTypes": false,
+          "convertFieldsToString": false
+        },
+        "options": {}
+      },
+      "id": "f1707587-febb-45bb-8f38-27edfa9738b0",
+      "name": "Write Normalized_Feedback",
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.5,
+      "position": [
+        5200,
+        480
+      ],
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "ybT0e3gvtlYGJ05G",
+          "name": "Google Sheets account 2"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "model": "deepseek/deepseek-v4-pro",
+        "options": {}
+      },
+      "type": "@n8n/n8n-nodes-langchain.lmChatOpenRouter",
+      "typeVersion": 1,
+      "position": [
+        2416,
+        1104
+      ],
+      "id": "82e89d29-eb0c-4a74-87ad-699818b26973",
+      "name": "OpenRouter Chat Model",
+      "credentials": {
+        "openRouterApi": {
+          "id": "eFhPHZzCKIeE6qkf",
+          "name": "OpenRouter account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "content": "# Step 1 - Ingest and Merge sources\n\n",
+        "height": 1312,
+        "width": 1152
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -464,
+        -112
+      ],
+      "id": "2c0bbd5e-a227-40c8-9158-df9d1b932c49",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "# Step 2 - Match the new taxonomy\n",
+        "height": 1024,
+        "width": 1472,
+        "color": 2
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        896,
+        176
+      ],
+      "id": "065325ba-26e0-49ac-ba6d-2f4ea7feba58",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "# Step 3 - Deduplicate Feature Requests\n",
+        "height": 1120,
+        "width": 2164,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        2720,
+        160
+      ],
+      "id": "a3e202a3-46ea-48af-b189-85bb09560101",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        4528,
+        1056
+      ],
+      "id": "dd2c7007-667e-4653-b13b-c91ec954201f",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "content": "# Output back to the sheet\n",
+        "height": 432,
+        "width": 384,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        5088,
+        288
+      ],
+      "id": "3fb2f63a-cebd-4ecb-a945-3ded97213c89",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "jsCode": "const input = $input.first().json.records;\nconst groups = {};\n\nfor (const r of input) {\n  const theme = r.parent_theme || 'Unclassified/Other';\n  if (!groups[theme]) groups[theme] = [];\n  groups[theme].push({ record_id: r.record_id, text: r.text });\n}\n\nreturn Object.entries(groups).map(([theme, records]) => ({\n  json: { parent_theme: theme, records }\n}));"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3408,
+        528
+      ],
+      "id": "d98d521b-ccea-4669-b4f9-c187f7ae9501",
+      "name": "Code in JavaScript"
+    },
+    {
+      "parameters": {
+        "jsCode": "const items = $input.all();\nconst allClusters = [];\n\nfor (const item of items) {\n  const clusters = (item.json.output && item.json.output.clusters) || [];\n  for (const c of clusters) {\n    allClusters.push({\n      record_ids: c.record_ids || [],\n      reason: c.reason || ''\n    });\n  }\n}\n\nreturn [{ json: { clusters: allClusters } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        3936,
+        544
+      ],
+      "id": "e2ee886c-610f-4403-9cb4-7990acec0e24",
+      "name": "Recombine Themed Dedup Results"
+    },
+    {
+      "parameters": {
+        "jsCode": "const clusters = $json.clusters || [];\nconst original = $('FR Records').all().map(i => i.json);\nconst byId = Object.fromEntries(original.map(r => [r.record_id, r]));\n\nconst valid_clusters = [];\nconst rejected_clusters = [];\n\nfor (const cluster of clusters) {\n  const ids = (cluster.record_ids || []).filter(Boolean);\n  const knownIds = ids.filter(id => byId[id]);\n  const unknownIds = ids.filter(id => !byId[id]);\n\n  if (knownIds.length < 2) {\n    rejected_clusters.push({ ...cluster, reason_rejected: 'fewer than 2 valid record_ids', unknownIds });\n    continue;\n  }\n\n  const themes = new Set(knownIds.map(id => byId[id].parent_theme));\n  if (themes.size > 1) {\n    rejected_clusters.push({ ...cluster, reason_rejected: 'members span multiple themes: ' + [...themes].join(', ') });\n    continue;\n  }\n\n  if (!cluster.reason || !cluster.reason.trim()) {\n    rejected_clusters.push({ ...cluster, reason_rejected: 'missing justification' });\n    continue;\n  }\n\n  valid_clusters.push({ record_ids: knownIds, reason: cluster.reason });\n}\n\nreturn [{ json: { valid_clusters, rejected_clusters } }];"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        4112,
+        480
+      ],
+      "id": "e0a8f451-ad7f-4b12-93ab-e542e6779eec",
+      "name": "Validate Clusters"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "When clicking Execute": {
+      "main": [
+        [
+          {
+            "node": "Read NPS_Responses",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read Support_Tickets",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read Sales_Call_Notes",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read CS_Escalations",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read Feature_Requests",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Read Accounts",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read NPS_Responses": {
+      "main": [
+        [
+          {
+            "node": "Normalize NPS",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Support_Tickets": {
+      "main": [
+        [
+          {
+            "node": "Normalize Support",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Sales_Call_Notes": {
+      "main": [
+        [
+          {
+            "node": "Normalize Sales",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read CS_Escalations": {
+      "main": [
+        [
+          {
+            "node": "Normalize CS Escalations",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Feature_Requests": {
+      "main": [
+        [
+          {
+            "node": "Normalize Feature Requests",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize NPS": {
+      "main": [
+        [
+          {
+            "node": "Merge All Sources",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Normalize Support": {
+      "main": [
+        [
+          {
+            "node": "Merge All Sources",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Normalize Sales": {
+      "main": [
+        [
+          {
+            "node": "Merge All Sources",
+            "type": "main",
+            "index": 2
+          }
+        ]
+      ]
+    },
+    "Normalize CS Escalations": {
+      "main": [
+        [
+          {
+            "node": "Merge All Sources",
+            "type": "main",
+            "index": 3
+          }
+        ]
+      ]
+    },
+    "Normalize Feature Requests": {
+      "main": [
+        [
+          {
+            "node": "Merge All Sources",
+            "type": "main",
+            "index": 4
+          }
+        ]
+      ]
+    },
+    "Merge All Sources": {
+      "main": [
+        [
+          {
+            "node": "Match Taxonomy",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Match Taxonomy": {
+      "main": [
+        [
+          {
+            "node": "Has Parent Theme?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Has Parent Theme?": {
+      "main": [
+        [
+          {
+            "node": "Recombine Classified",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Unmatched Records",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Unmatched Records": {
+      "main": [
+        [
+          {
+            "node": "Prepare Batch for Classification",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare Batch for Classification": {
+      "main": [
+        [
+          {
+            "node": "AI Classify Theme",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Classify Theme": {
+      "main": [
+        [
+          {
+            "node": "Attach AI Theme",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Attach AI Theme": {
+      "main": [
+        [
+          {
+            "node": "Recombine Classified",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "AI Classify Theme",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Recombine Classified": {
+      "main": [
+        [
+          {
+            "node": "Is Feature Request?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is Feature Request?": {
+      "main": [
+        [
+          {
+            "node": "FR Records",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Merge Deduped + Other",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "FR Records": {
+      "main": [
+        [
+          {
+            "node": "Prepare FR List for Dedup",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Prepare FR List for Dedup": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "AI Dedup Feature Requests": {
+      "main": [
+        [
+          {
+            "node": "Recombine Themed Dedup Results",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Structured Output Parser (Dedup)": {
+      "ai_outputParser": [
+        [
+          {
+            "node": "AI Dedup Feature Requests",
+            "type": "ai_outputParser",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Build FR Duplicate Status": {
+      "main": [
+        [
+          {
+            "node": "Mark Duplicates in Feature_Requests",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge Deduped + Other": {
+      "main": [
+        [
+          {
+            "node": "Fill Missing Fields",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fill Missing Fields": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Read Accounts": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Attach Revenue Signals": {
+      "main": [
+        [
+          {
+            "node": "Write Normalized_Feedback",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Apply Dedup - Merge Clusters": {
+      "main": [
+        [
+          {
+            "node": "Merge Deduped + Other",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "OpenRouter Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "AI Classify Theme",
+            "type": "ai_languageModel",
+            "index": 0
+          },
+          {
+            "node": "AI Dedup Feature Requests",
+            "type": "ai_languageModel",
+            "index": 0
+          },
+          {
+            "node": "Structured Output Parser (Dedup)",
+            "type": "ai_languageModel",
+            "index": 0
+          },
+          {
+            "node": "Structured Output Parser",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "Attach Revenue Signals",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Code in JavaScript": {
+      "main": [
+        [
+          {
+            "node": "AI Dedup Feature Requests",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Recombine Themed Dedup Results": {
+      "main": [
+        [
+          {
+            "node": "Validate Clusters",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Clusters": {
+      "main": [
+        [
+          {
+            "node": "Build FR Duplicate Status",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Apply Dedup - Merge Clusters",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate"
+  },
+  "versionId": "9a164850-b402-4f1b-ab41-ab9d3783280e",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "e2e262fe2a29d2735baf13815bd4cd48e5b2d2e0bd29ee1a3c65f1117363c624"
+  },
+  "id": "z2ubZN17fYb9eYGO",
+  "tags": []
+}
